@@ -1,0 +1,478 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Thinny || Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Thinny&rdquo; Documentation by &ldquo;TeamXcel&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Thinny&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created:15/03/2018<br>
+				By: <a href="http://www.wowthemez.com">TeamXcel</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+			<li><a href="#">Flash</a>  <em class="quiet small">(If your theme uses Flash)</em></li>
+			<li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li>
+			<li><a href="#">Any additional unique features that need an overview</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>              
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The template page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+<pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Thinny Portfolio Temlate.">
+        &lt;meta name="author" content="TeamXcel">
+       
+        &lt;title>Thinny Portfolio Template&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		&lt;!-- Font Awesome CSS -->
+        &lt;link rel="stylesheet" href="css/font-awesome.min.css">
+        &lt;!-- Elegant Font Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-font-icons.css">
+        &lt;!-- Elegant Line Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+		&lt;!-- Bootstrap CSS -->
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+        &lt;!-- animate CSS -->
+        &lt;link rel="stylesheet" href="css/animate.min.css">
+		&lt;!-- Venobox CSS -->
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css">
+		&lt;!-- OWL-Carousel CSS -->
+        &lt;link rel="stylesheet" href="css/owl.carousel.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/main.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/menu.css">
+		&lt;!-- Responsive CSS -->
+        &lt;link rel="stylesheet" href="css/responsive.css">
+
+        &lt;script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+    &lt;/head>
+    &lt;body data-spy="scroll" data-target="#navbar" data-offset="60">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div id='preloader' >
+            &lt;div class='loader' >
+                &lt;img src="img/three-dots.svg" width="60" alt="">
+            &lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+        
+        
+        &lt;header id="header" class="header_section">
+			&lt;nav id="navbar_wrap" class="navbar header_1 header">
+				&lt;div class="container">
+					&lt;div class="navbar-header">
+						&lt;button type="button" class="nav-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							&lt;span class="sr-only">Toggle navigation&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+						&lt;/button>
+						&lt;a href="#" class="brand">
+						    &lt;img src="img/logo-dark.png" alt="Logo" class="logo_dark">
+						    &lt;img src="img/logo-light.png" alt="Logo" class="logo_light">
+						&lt;/a>
+					&lt;/div>
+					&lt;div id="navbar" class="collapse navbar-collapse navbar-right">
+						&lt;ul class="nav navbar-nav nav-menu">
+                            &lt;li class="active">&lt;a data-scroll href="#home">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#portfolio">Portfolio&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#contact">Contact&lt;/a>&lt;/li>
+                        &lt;/ul>
+                        &lt;a href="#" class="thinny_btn "data-toggle="modal" data-target="#myModal">Hire Me Now&lt;/a>
+					&lt;/div>&lt;!--/.navbar-collapse -->
+				&lt;/div>
+			&lt;/nav>&lt;!-- Navigation Bar -->
+		&lt;/header> &lt;!-- Header -->
+		
+		&lt;section id="home" class="hero_section bd-bottom header_height">
+            
+        &lt;/section>&lt;!-- hero_section -->
+        
+        &lt;section class="about_section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!-- about_section -->
+		
+		&lt;section id="portfolio" class="portfolio_section padding">
+			
+		&lt;/section>&lt;!-- /.portfolio_section -->
+        
+        &lt;section id="contact" class="contact_section bg-grey bd-bottom padding">
+            
+        &lt;/section>&lt;!-- /.contact_section -->  
+
+		&lt;footer class="footer_section bg-grey">
+			
+		&lt;/footer>&lt;!-- /.footer_section -->
+
+		&lt;a data-scroll href="#header" id="scroll-to-top">&lt;i class="arrow_carrot-up">&lt;/i>&lt;/a>
+    
+	    &lt;!-- Modal -->
+        &lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          &lt;div class="modal-dialog" role="document">
+            &lt;div class="modal-content">
+              &lt;div class="modal-header align-center">
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">&lt;span aria-hidden="true">&times;&lt;/span>&lt;/button>
+                &lt;h4 class="modal-title" id="myModalLabel">Get In Touch&lt;/h4>
+              &lt;/div>
+              &lt;div class="modal-body">
+                    &lt;div class="contact_form">
+                        &lt;form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
+                            &lt;div class="form-group">
+                                &lt;div class="col-sm-6">
+                                    &lt;input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                &lt;/div>
+                                &lt;div class="col-sm-6">
+                                    &lt;input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="form-group">
+                                &lt;div class="col-xs-12">
+                                    &lt;textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Message" required>&lt;/textarea>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="col-xs-12 align-center">
+                                &lt;button id="submit" class="thinny_btn" type="submit">Send Message&lt;/button>
+                            &lt;/div>
+                            &lt;div id="form-messages" class="alert" role="alert">&lt;/div>
+                        &lt;/form>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+		&lt;!-- jQuery Lib -->
+		&lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+		&lt;!-- waypoints js -->
+		&lt;script src="js/vendor/jquery.waypoints.v2.0.3.min.js">&lt;/script>
+		&lt;!-- Bootstrap JS -->
+		&lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+        &lt;!-- Imagesloaded JS -->
+        &lt;script src="js/vendor/imagesloaded.pkgd.min.js">&lt;/script>
+		&lt;!-- OWL-Carousel JS -->
+		&lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+		&lt;!-- isotope JS -->
+		&lt;script src="js/vendor/jquery.isotope.v3.0.2.js">&lt;/script>
+		&lt;!-- Smooth Scroll JS -->
+		&lt;script src="js/vendor/smooth-scroll.min.js">&lt;/script>
+		&lt;!-- Typed JS -->
+		&lt;script src="js/vendor/typed.min.js">&lt;/script>
+		&lt;!-- Nice Scroll JS -->
+		&lt;script src="js/vendor/jquery.nicescroll.min.js">&lt;/script>
+		&lt;!-- vendor JS -->
+		&lt;script src="js/vendor/venobox.min.js">&lt;/script>
+		&lt;!-- Main JS -->
+		&lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;header id="header" class="header_section">
+	&lt;nav id="navbar_wrap" class="navbar header_1 header">
+		&lt;div class="container">
+			&lt;div class="navbar-header">
+				&lt;button type="button" class="nav-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					&lt;span class="sr-only">Toggle navigation&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+				&lt;/button>
+				&lt;a href="#" class="brand">
+					&lt;img src="img/logo-dark.png" alt="Logo" class="logo_dark">
+					&lt;img src="img/logo-light.png" alt="Logo" class="logo_light">
+				&lt;/a>
+			&lt;/div>
+			&lt;div id="navbar" class="collapse navbar-collapse navbar-right">
+				&lt;ul class="nav navbar-nav nav-menu">
+					&lt;li class="active">&lt;a data-scroll href="#home">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#portfolio">Portfolio&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#contact">Contact&lt;/a>&lt;/li>
+				&lt;/ul>
+				&lt;a href="#" class="thinny_btn "data-toggle="modal" data-target="#myModal">Hire Me Now&lt;/a>
+			&lt;/div>&lt;!--/.navbar-collapse -->
+		&lt;/div>
+	&lt;/nav>&lt;!-- Navigation Bar -->
+&lt;/header> &lt;!-- Header -->
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="home" class="hero_section bd-bottom header_height">
+	&lt;div class="display-table">
+		&lt;div class="table-cell">
+		   &lt;div class="container">
+				&lt;div class="hero_content">
+					&lt;h1>I'm &lt;span class="typed">&lt;/span>&lt;/h1>
+					&lt;P>A stunning collection of front end web components.&lt;/P>
+				&lt;/div>
+		   &lt;/div>
+		   &lt;div class="profile_image">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- hero_section -->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) About Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="about_section bg-grey bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="about_content section_heading align-center mb-40">
+			&lt;h2>Services I Provide.&lt;/h2>
+			&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  &lt;br>It has survived not only five centuries&lt;/p>
+		&lt;/div>
+		&lt;div id="service-carousel" class=" owl-carousel service_list">
+			&lt;div class="service_item">
+				&lt;div class="service_content">
+					&lt;img src="img/icon-1.png" alt="icon">
+					&lt;h3>Web Design&lt;/h3>
+					&lt;p>Lorem Ipsum is simply dummy text of the printing and industry.&lt;/p>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- about_section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>4) Portfolio Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="portfolio" class="portfolio_section padding">
+	&lt;div class="container">
+		&lt;div class="section_heading align-center mb-40">
+			&lt;h2>Recent Works&lt;/h2>
+			&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  &lt;br>It has survived not only five centuries&lt;/p>
+		&lt;/div>&lt;!-- /.section_heading -->
+		&lt;ul class="portfolio_filter mb-30">
+			&lt;li class="active" data-filter="*">All&lt;/li>
+			&lt;li data-filter=".branding">Branding&lt;/li>
+			&lt;li data-filter=".website">Website&lt;/li>
+			&lt;li data-filter=".print">Print&lt;/li>
+			&lt;li data-filter=".photo">Photo&lt;/li>
+		&lt;/ul>&lt;!-- /.portfolio_filter -->
+		&lt;ul class="portfolio_items grid">
+			&lt;li class="col-sm-4 col-xs-6 xs-padding single_item branding">
+				&lt;figure class="portfolio_item">
+					&lt;img src="img/work-1.jpg" alt="Portfolio Item">
+					&lt;div class="hover_effect">
+						&lt;a href="img/work-1.jpg" class="img_popup">
+							&lt;div class="table-cell">
+								&lt;img src="img/zoom.png" alt="">
+							&lt;/div>
+						&lt;/a>
+					&lt;/div>
+				&lt;/figure>
+			&lt;/li>
+		&lt;/ul>&lt;!-- /.portfolio_items -->
+	&lt;/div>
+&lt;/section>&lt;!-- /.portfolio_section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>4) Contact Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="contact" class="contact_section bg-grey bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="contact_info align-center">
+			&lt;h2>Let’s Work Together&lt;/h2>
+			&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  &lt;br>It has survived not only five centuries&lt;/p>
+			&lt;a href="#" class="thinny_btn "data-toggle="modal" data-target="#myModal">Send a Message&lt;/a>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.contact_section -->  
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Footer Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer_section bg-grey">
+	&lt;div class="container">
+		&lt;div class="col-xs-6 xs-padding xs-text-center">
+			&lt;div class="copyright">&copy; 2018 Thinny Powered by TeamXcel&lt;/div>
+		&lt;/div>
+		&lt;div class="col-xs-6 xs-padding">
+			&lt;ul class="footer_social xs-text-center">
+				&lt;li>&lt;a href="#">&lt;i class="social_facebook">&lt;/i>&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+	&lt;/div>
+&lt;/footer>&lt;!-- /.footer_section -->
+</pre>
+
+  <br>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>animate.min.css</li> 
+			<li>elegant-font-icons.css</li> 
+			<li>elegant-line-icons.css</li> 
+			<li>owl.carousel.css</li> 
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery.ajaxchimp.min.js
+                jquery-1.12.4.min.js
+                jquery.mb.YTPlayer.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                jquery.counterup.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="_blank">YTPlayer</a></li>
+			<li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+		</ol>
+	    <p>
+      
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>TeamXcel</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>
